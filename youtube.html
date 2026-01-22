@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img 
             class="hamburger-menu"
@@ -26,20 +26,23 @@
                 <img 
                 class="search-icon" 
                 src="icons/search.svg">
+                <div class="tooltip">Search</div>
             </button>
             <button
             class="voice-search-button">
-                <img 
-                class="voice-search-icon"
+                <img class="voice-search-icon"
                 src="icons/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
-           <img 
-           class="upload-icon"
-           src="icons/upload.svg">
-           <img 
-           class="youtube-apps-icon"
+            <div class="upload-icon-container">
+                <img 
+                class="upload-icon"
+                src="icons/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <img class="youtube-apps-icon"
            src="icons/youtube-apps.svg">
            <div 
            class="notifications-icon-container">
@@ -55,18 +58,37 @@
            class="current-user-picture"
            src="channel-pictures/my-channel.jpeg">
         </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
-    <div class="sidebar-link"></div>
-    <div class="sidebar-link"></div>
-    <div class="sidebar-link"></div>
-    <div class="sidebar-link"></div>
-    <div class="sidebar-link"></div>
-    <div class="sidebar-link"></div>
+    <nav class="sidebar">
+    <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
     </div>
-       
-    <div class="video-grid">
+    <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+    </div>
+</nav>
+   
+    <main>
+    <section class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
@@ -169,7 +191,7 @@
                     <p class="video-stats">141M views &#183; 1 year ago</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
